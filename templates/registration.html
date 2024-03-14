@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    body {
+        background-color: rgb(255, 255, 255);
+        font-family: 'Segoe UI', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    p
+    {
+        margin-bottom: 23px;
+    }
+    p2 {
+        font-family: 'Segoe UI', sans-serif;
+        color: white;
+        padding: 20px 20px; /* Adjusted padding */
+        text-align: left;
+        margin-left: 5px;
+    }
+    h1 {
+        color: rgb(5, 96, 135);
+        text-align: center;
+        font-family: Trebuchet MS, sans-serif;
+    }
+    nav {
+        background-color: rgb(103, 179, 70);
+        text-align: center;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    li a, li b {
+        display: block;
+        font-family: 'Segoe UI', sans-serif;
+        text-decoration: none;
+        padding: 10px 20px;
+    }
+    li a {
+        color: white;
+    }
+    li b {
+        color: rgb(5, 96, 135);
+    }
+    li a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    .container {
+        margin: 20px;
+    }
+    .box-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .box {
+        width: 300px;
+        background-color: rgba(103, 179, 70, 0.8);
+        padding: 20px;
+        margin: 20px;
+        text-align: center;
+    }
+    .box-link {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        display: block;
+        margin-top: 10px;
+    }
+    .footer {
+        background-color: rgb(103, 179, 70);
+        color: white;
+        padding: 20px 20px; /* Adjusted padding */
+        margin-top: 105px; /* Adjusted margin-top */
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        text-align: left;
+    }
+
+    </style>
+    <title>UPrep MUN</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='upreplogo.png') }}">
+</head>
+<body>
+    <h1>UPrep MUN</h1>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/registration">Registration</a></li>
+            <li><a href="/committees">Committees</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container box-container">
+        <div class="box">
+            <p>Registration Form</p>
+            <a href="https://forms.gle/XbuSkxbuyStFvsH76" class="box-link" target="_blank">Click Here</a>
+        </div>
+        <div class="box">
+            <p>MUN Northwest Rules of Procedure</p>
+            <a href="https://files.munnorthwest.org/application/pacmun/ac49d23cd0f46187568519a1c1e9186d6056147ccada66f5b9e6c6343c335901/MNW%20Long%20Form%20FINAL%20(1).pdf" class="box-link" target="_blank">Click Here</a>
+        </div>
+        <div class="box">
+            <p>Resolution Writing</p>
+            <a href="https://files.munnorthwest.org/application/pacmun/645a532671080a0923126cf4cfb54d8831589188b0ad1d0d8b0cf1a2e8a385e2/PACMUN%20Resolution%20Writing%20Guide.pdf" class="box-link" target="_blank">Click Here</a>
+        </div>
+        <div class="box">
+            <p>Country Matrix</p>
+            <a href="https://docs.google.com/spreadsheets/d/1PTV1ndf4huf2ODK_w9rcA0EwKP2ogI3Js7ANZLxP9Kg/edit?usp=sharing" class="box-link" target="_blank">Click Here</a>
+        </div>
+    </div>
+    <div class="footer">
+        <p2>COPYRIGHT © 2024 UPREP MUN - ALL RIGHTS RESERVED.</p2>
+    </div>
+</body>
+</html>

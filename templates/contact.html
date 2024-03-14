@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    body {
+        background-color: rgb(255, 255, 255);
+        font-family: 'Segoe UI', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    h1 {
+        color: rgb(5, 96, 135);
+        text-align: center;
+        font-family: Trebuchet MS, sans-serif;
+    }
+    h2 {
+        color:  rgb(5, 96, 135);
+        font-size: larger;
+        font-style: normal;
+        font-family: Verdana, Tahoma, sans-serif;
+        text-align: left;
+        margin-top: -150px;
+        margin-bottom: -50px;
+        margin-left: -120px;
+    }
+    p {
+        font-family: 'Segoe UI', sans-serif;
+        color: rgb(5, 96, 135);
+        padding: 10px 20px;
+        text-align: left;
+        margin-top: 5px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: -3px;
+    }
+    p2 {
+        font-family: 'Segoe UI', sans-serif;
+        color: white;
+        padding: 10px 20px;
+        text-align: left;
+        margin-top: 20px;
+        margin-left: -750px;
+    }
+    nav {
+        background-color: rgb(103,179,70);
+        text-align: center;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    li a {
+        display: block;
+        font-family: 'Segoe UI', sans-serif;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+    }
+    li a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    .container {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .image-container {
+        margin-top: -270px;
+        margin-bottom: 50px;
+        margin-left: 50px;
+        margin-right: 100px;
+    }
+    .logo-image {
+        width: 350px;
+        height: 350px;
+    }
+    .school-image{
+        width: 300px;
+        height: auto;
+    }
+    .about-MUN {
+        margin-top: 20px;
+        margin-bottom: 304px;
+    }
+    .about-MUN2 {
+        background-color: rgb(103,179,70);
+        padding: 20px;
+        text-align: center;
+    }
+    </style>
+    <title>UPrep MUN</title>
+</head>
+<link rel="icon" type="image/png" href="{{ url_for('static', filename='upreplogo.png') }}">
+
+<body>
+    <h1>UPrep MUN</h1>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/registration">Registration</a></li>
+            <li><a href="/committees">Committees</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="about-MUN">
+            <p><b>For any inquries, please reach out Anousha Mukherjee, Noah Roth, and Sid Ramanathan.</b></p>
+            <p>Secretariat: <a href="mailto:a.mukherjee@universityprep.org; n.roth@universityprep.org; siddharth.ramanathan@universityprep.org;">a.mukherjee@universityprep.org; n.roth@universityprep.org; siddharth.ramanathan@universityprep.org;</a></p>
+            <p>MUN Club Advisor: <a href="mailto:b.gonzales@universityprep.org">b.gonzales@universityprep.org</a></p>            
+        </div>
+    </div>
+    <div class="image-container">
+        <img src="/static/uprepmunlogo.png" alt="UPrep MUN" class="school-image">
+    </div>
+    <div class="container">
+        <div class="about-MUN2">
+            <p2>COPYRIGHT © 2024 UPREP MUN - ALL RIGHTS RESERVED.</p2>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    body {
+        background-color: rgb(255, 255, 255);
+        font-family: 'Segoe UI', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    h1 {
+        color: rgb(5, 96, 135);
+        text-align: center;
+        font-family: 'Trebuchet MS', 'sans-serif';
+    }
+    h2 {
+        color: rgb(5, 96, 135);
+        font-size: xx-large;
+        font-style: normal;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 10px;
+    }
+    p {
+        font-family: 'Segoe UI', sans-serif;
+        color: rgb(5, 96, 135);
+        padding: 10px 20px;
+        text-align: left;
+        margin-top: 5px;
+        margin-left: 20px;
+        margin-right: 550px;
+    }
+    p2 {
+        font-family: 'Segoe UI', sans-serif;
+        color: white;
+        padding: 10px 20px;
+        text-align: left;
+        margin-top: 20px;
+        margin-left: -750px;
+    }
+    nav {
+        background-color: rgb(103,179,70);
+        text-align: center;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    li a {
+        display: block;
+        font-family: 'Segoe UI', sans-serif;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+    }
+    li a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    .container {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .image-container {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 340px;
+        margin-right: 0px;
+    }
+    .schedule {
+        margin-top: 0px;
+        margin-bottom: 50px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .school-image {
+        width: 600px;
+        height: 630px;
+    }
+    .logo-image {
+        width: 350px;
+        height: 350px;
+    }
+    .about-MUN {
+        background-color: white;
+        padding: 50px;
+        text-align: center;
+    }
+    .about-MUN2 {
+        background-color:rgb(103,179,70);
+        padding: 20px;
+        text-align: center; 
+    }
+    .schedule-table {
+        margin: 0 auto;
+        border-collapse: collapse;
+        width: 80%;
+    }
+    .schedule-table th, .schedule-table td {
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+        text-align: center;
+    }
+    .schedule-table th {
+        background-color:rgb(5, 96, 135);
+        color: white;
+    }
+    </style>
+    <title>UPrep MUN</title>
+</head>
+<link rel="icon" type="image/png" href="{{ url_for('static', filename='upreplogo.png') }}">
+<body>
+    <h1>UPrep MUN</h1>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/registration">Registration</a></li>
+            <li><a href="/committees">Committees</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="about-MUN">
+            <h2><b>Welcome to the 1st iteration of UPrep MUN!</b></h2>
+            <h2><b>UPrep MUN will be held on April 20th, 2024</b></h2>
+        </div>
+    </div>
+    <div class="image-container">
+        <img src="/static/upreppumas.png" alt="UPrep MUN" class="school-image">
+    </div>
+    <div class="schedule">
+        <table class="schedule-table">
+            <tr>
+                <th>Event</th>
+                <th>Time</th>
+            </tr>
+            <tr>
+                <td>Check-In/Registration</td>
+                <td>9:00 AM – 9:30 AM</td>
+            </tr>
+            <tr>
+                <td>Opening ceremony</td>
+                <td>9:30 AM – 10:00 AM</td>
+            </tr>
+            <tr>
+                <td>Committee Session 1</td>
+                <td>10:00 AM – 11:00 AM</td>
+            </tr>
+            <tr>
+                <td>Break</td>
+                <td>11:00 AM – 11:15 AM</td>
+            </tr>
+            <tr>
+                <td>Committee Session 2</td>
+                <td>11:15 AM – 12:00 PM</td>
+            </tr>
+            <tr>
+                <td>Lunch</td>
+                <td>12:00 PM – 1:00 PM</td>
+            </tr>
+            <tr>
+                <td>Committee Session 3</td>
+                <td>1:00 PM – 2:30 PM</td>
+            </tr>
+            <tr>
+                <td>Break</td>
+                <td>2:30 PM – 2:45 PM</td>
+            </tr>
+            <tr>
+                <td>Committee Session 4</td>
+                <td>2:45 PM – 3:45 PM</td>
+            </tr>
+            <tr>
+                <td>Committee Photos</td>
+                <td>3:45 PM – 4:00 PM</td>
+            </tr>
+            <tr>
+                <td>FunMUN/DAIS review</td>
+                <td>4:00 PM – 4:30 PM</td>
+            </tr>
+            <tr>
+                <td>Closing ceremony</td>
+                <td>4:30 PM – 5:00 PM</td>
+            </tr>
+        </table>
+    </div>
+    <div class="container">
+        <div class="about-MUN2">
+            <p2>COPYRIGHT © 2024 UPREP MUN - ALL RIGHTS RESERVED.</p2>
+        </div>
+    </div>
+</body>
+</html>
