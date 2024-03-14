@@ -7,23 +7,23 @@ app = Flask(__name__)
 socketio = SocketIO(app)
 
 # app routes
-@app.route('/index')
+@app.route('/templates/index')
 def home():
     return render_template('index.html')
 
-@app.route('/about')
+@app.route('/templates/about')
 def index():
     return render_template('about.html')
 
-@app.route('/registration')
+@app.route('/templates/registration')
 def registration():
     return render_template('registration.html')
 
-@app.route('/committees')
+@app.route('/templates/committees')
 def resources():
     return render_template('committees.html')
 
-@app.route('/contact')
+@app.route('/templates/contact')
 def contact():
     return render_template('contact.html')
 
