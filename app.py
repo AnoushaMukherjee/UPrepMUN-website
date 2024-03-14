@@ -7,13 +7,13 @@ app = Flask(__name__)
 socketio = SocketIO(app)
 
 # app routes
-@app.route('/')
-def home():
-    return render_template('home.html')
-
 @app.route('/index')
-def index():
+def home():
     return render_template('index.html')
+
+@app.route('/about')
+def index():
+    return render_template('about.html')
 
 @app.route('/registration')
 def registration():
