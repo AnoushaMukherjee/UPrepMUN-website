@@ -89,10 +89,16 @@
         padding: 20px;
         text-align: center; 
     }
+    .committee-dropdown {
+        margin-top: 20px;
+        margin-left: -80px;
+    }
+    .committee-description {
+        display: none;
+    }
     </style>
     <title>UPrep MUN</title>
 </head>
-    <link rel="icon" type="image/png" href="{{ url_for('static', filename='upreplogo.png') }}">
 <body>
     <h1>UPrep MUN</h1>
     <nav>
@@ -107,24 +113,25 @@
     <div class="container">
         <div class="about-MUN">
             <h2><b>UPrep MUN will hold the three committees below:</b></h2>
-            <p><b>Background guides coming soon.</b></p>
-            <p><b>Committee 1: United Nations High Commissioner for Refugees</b></p>
-            <p>Topic A: Effects of Refugees on the Economic Growth and Burden of Countries</p>
-            <p>The United Nations High Commissioner for Refugees (UNHCR) was founded in 1950 to protect forcibly displaced and stateless people. UNHCR has worked with more than 100 countries to ensure the rights of refugees, migrants, and asylum seekers. The core principle of the committee is to protect human rights and prevent refoulement, the forcible return of refugees to their country of origin where they are susceptible to persecution. Through partnerships with host countries, UNHCR hopes to build better futures and long-term solutions for displaced people. In this committee, delegates will assess the effectiveness of current policies and initiatives addressing displaced persons and evaluate challenges faced by host countries in providing support through education, healthcare, employment, and legal rights.</p>
-            
-            <p><b>Committee 2: Organization of American States: Crisis</b></p>
-            <p>Crisis: An unknown adversary has scuttled a Maersk cargo ship, blocking the Panama Canal and international trade.</p>
-            <p>The Organization of American States (OAS), established in 1948, serves as a regional multilateral platform for nearly all independent countries in the Western Hemisphere. Its core objectives include promoting economic, military, and cultural cooperation among member states. As a forum for dialogue, the OAS addresses mutual concerns, fosters peace, democratic governance, and human rights, and actively engages in election monitoring within the region. In this emergency session, the U.N. Security Council has partnered with the Organization of American States (O.A.S.) to respond to a developing crisis in Central America. An unknown adversary has scuttled a Maersk cargo ship, blocking the Panama Canal and international trade.</p>
-
-            <p><b>Committee 3: United Nations Educational, Scientific and Cultural Organization</b></p>
-            <p>Topic A: Repatriation of Art and Artifacts</p>
-            <p>The United Nations Educational, Scientific, and Cultural Organization (UNESCO) was established in 1945 after the two World Wars to achieve the “intellectual and moral solidarity of mankind.” The organization seeks to fulfill this goal by developing educational tools, promoting cultural heritage, fostering equal dignity amongst cultures, addressing social and ethical challenges, and mobilizing scientific programs and policies. In this committee, UNESCO members will consider the repatriation of art and other cultural artifacts. How can we correct for some of the historical wrongs that lead to taking of these objects? At the same time, how do we best safeguard our common cultural heritage as humans? Delegates in the UNESCO committee will get a chance to debate, discuss, and answer these questions more.</p>
-        </div>
-    </div>
-    <div class="container">
-        <div class="about-MUN2">
-            <p2>COPYRIGHT © 2024 UPREP MUN - ALL RIGHTS RESERVED.</p2>
-        </div>
-    </div>
-</body>
-</html>
+            <div class="committee-dropdown">
+                <p><b>Committee 1: United Nations High Commissioner for Refugees</b></p>
+                <div class="committee-description">
+                    <p>Topic A: Effects of Refugees on the Economic Growth and Burden of Countries</p>
+                    <p>The United Nations High Commissioner for Refugees (UNHCR) was founded in 1950 to protect forcibly displaced and stateless people. UNHCR has worked with more than 100 countries to ensure the rights of refugees, migrants, and asylum seekers. The core principle of the committee is to protect human rights and prevent refoulement, the forcible return of refugees to their country of origin where they are susceptible to persecution. Through partnerships with host countries, UNHCR hopes to build better futures and long-term solutions for displaced people. In this committee, delegates will assess the effectiveness of current policies and initiatives addressing displaced persons and evaluate challenges faced by host countries in providing support through education, healthcare, employment, and legal rights.</p>
+                </div>
+            </div>
+            <div class="committee-dropdown">
+                <p><b>Committee 2: Organization of American States: Crisis</b></p>
+                <div class="committee-description">
+                    <p>Crisis: An unknown adversary has scuttled a Maersk cargo ship, blocking the Panama Canal and international trade.</p>
+                    <p>The Organization of American States (OAS), established in 1948, serves as a regional multilateral platform for nearly all independent countries in the Western Hemisphere. Its core objectives include promoting economic, military, and cultural cooperation among member states. As a forum for dialogue, the OAS addresses mutual concerns, fosters peace, democratic governance, and human rights, and actively engages in election monitoring within the region. In this emergency session, the U.N. Security Council has partnered with the Organization of American States (O.A.S.) to respond to a developing crisis in Central America. An unknown adversary has scuttled a Maersk cargo ship, blocking the Panama Canal and international trade.</p>
+                </div>
+            </div>
+            <div class="committee-dropdown">
+                <p><b>Committee 3: United Nations Educational, Scientific and Cultural Organization</b></p>
+                <div class="committee-description">
+                    <p>Topic A: Repatriation of Art and Artifacts</p>
+                    <p>The United Nations Educational, Scientific, and Cultural Organization (UNESCO) was established in 1945 after the two World Wars to achieve the “intellectual and moral solidarity of mankind.” The organization seeks to fulfill this goal by developing educational tools, promoting cultural heritage, fostering equal dignity amongst cultures, addressing social and ethical challenges, and mobilizing scientific programs and policies. In this committee, UNESCO members will consider the repatriation of art and other cultural artifacts. How can we correct for some of the historical wrongs that lead to taking of these objects? At the same time, how do we best safeguard our common cultural heritage as humans? Delegates in the UNESCO committee will get a chance to debate, discuss, and answer these questions more.</p>
+                </div>
+            </div>
+        </div
